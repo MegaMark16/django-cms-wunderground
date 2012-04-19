@@ -1,0 +1,14 @@
+<div>
+    <div>
+        {% now "jS F Y" %}
+    </div>
+    <div>
+        {{ weather_info.location.city }}, 
+        {{ weather_info.location.state }}
+    </div>
+    <div>
+        {{ weather_info.current_observation.temp_c }}°c
+        {{ weather_info.current_observation.weather }}
+        <img src="{{ weather_info.current_observation.icon_url }}" />
+    </div>
+</div>
